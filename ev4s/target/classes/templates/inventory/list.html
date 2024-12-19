@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory List</title>
+</head>
+<body>
+<h1>Inventory List</h1>
+<a href="/inventory/add">Add New Vehicle</a>
+<table border="1">
+    <thead>
+    <tr>
+        <th>Model</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="vehicle : ${inventory}">
+        <td th:text="${vehicle.model}"></td>
+        <td th:text="${vehicle.quantity}"></td>
+        <td th:text="${vehicle.price}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

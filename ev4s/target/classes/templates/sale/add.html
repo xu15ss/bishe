@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Sale</title>
+</head>
+<body>
+<h1>Add New Sale</h1>
+<form action="/sale/add" method="post">
+    <label for="customerId">Customer ID:</label>
+    <input type="text" id="customerId" name="customerId" required><br>
+
+    <label for="inventoryId">Vehicle ID:</label>
+    <input type="text" id="inventoryId" name="inventoryId" required><br>
+
+    <label for="saleDate">Sale Date:</label>
+    <input type="text" id="saleDate" name="saleDate" required><br>
+
+    <label for="totalAmount">Total Amount:</label>
+    <input type="text" id="totalAmount" name="totalAmount" required><br>
+
+    <button type="submit">Save</button>
+</form>
+</body>
+</html>
